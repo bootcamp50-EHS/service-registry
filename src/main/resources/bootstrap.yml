@@ -4,5 +4,8 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
-      username: ehs
-      password: ehs123
+#      uri: http://config-server:8888
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
